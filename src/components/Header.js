@@ -1,13 +1,18 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <nav className="light-blue">
       <div className="nav-wrapper">
-        <a href="!#" className="brand-logo">
+        <Link to="!#" className="brand-logo">
           Logo
-        </a>
+        </Link>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <a href="!#">repo</a>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
